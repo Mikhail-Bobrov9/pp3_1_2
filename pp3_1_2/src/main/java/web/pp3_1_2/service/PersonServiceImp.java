@@ -2,14 +2,14 @@ package web.pp3_1_2.service;
 
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import web.pp3_1_2.dao.PersonDAO;
 import web.pp3_1_2.models.Person;
 
 import java.util.List;
 
 
-@Component
+@Service
 @Transactional
 public class PersonServiceImp implements PersonService {
 

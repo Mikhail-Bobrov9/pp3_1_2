@@ -2,12 +2,12 @@ package web.pp3_1_2.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.pp3_1_2.models.Person;
 
 import java.util.List;
 
-@Component
+@Repository
 public class PersonDAOImp implements PersonDAO {
 
     @PersistenceContext
