@@ -3,9 +3,7 @@ package web.pp3_1_2.dao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
-
 import web.pp3_1_2.models.User;
-
 import java.util.List;
 
 @Repository

@@ -1,9 +1,6 @@
 package web.pp3_1_2.service;
 
-
-
 import web.pp3_1_2.models.User;
-
 import java.util.List;
 
 public interface UserService {
