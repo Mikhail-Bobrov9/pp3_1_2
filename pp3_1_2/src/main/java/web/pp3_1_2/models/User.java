@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
-public class Person {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,10 +21,10 @@ public class Person {
     @Column(name = "email")
     private String email;
 
-    public Person() {
+    public User() {
     }
 
-    public Person(int id, String name, String surname, String email) {
+    public User(int id, String name, String surname, String email) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -65,7 +65,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +

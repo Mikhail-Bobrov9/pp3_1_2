@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<a href="/people/new"> New Person</a>
+<a href="/people/new"> New User</a>
 <br/>
 
 <table th:border="1">
@@ -18,16 +18,16 @@
         <th>Email</th>
 
     </tr>
-    <tr th:each="person,state:${people}"
+    <tr th:each="user,state:${people}"
     class="row" th:classappend="${state.odd}?'odd-row':'even-row'">
 
-        <td> <a th:href="@{/people/{id}(id=${person.getId()})}" th:utext="${person.getId()}">Id </a></td>
+        <td> <a th:href="@{/people/{id}(id=${user.getId()})}" th:utext="${user.getId()}">Id </a></td>
 
-        <td> <a th:href="@{/people/{id}(id=${person.getId()})}" th:utext="${person.getName()}">Name</a></td>
+        <td> <a th:href="@{/people/{id}(id=${user.getId()})}" th:utext="${user.getName()}">Name</a></td>
 
-        <td> <a th:href="@{/people/{id}(id=${person.getId()})}" th:utext="${person.getSurname()}">Surname</a></td>
+        <td> <a th:href="@{/people/{id}(id=${user.getId()})}" th:utext="${user.getSurname()}">Surname</a></td>
 
-        <td> <a th:href="@{/people/{id}(id=${person.getId()})}" th:utext="${person.getEmail()}">Email</a></td>
+        <td> <a th:href="@{/people/{id}(id=${user.getId()})}" th:utext="${user.getEmail()}">Email</a></td>
 
 
     </tr>
